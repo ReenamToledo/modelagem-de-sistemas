@@ -16,9 +16,9 @@ body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
-  --color-primary: #2563eb;
+  --color-primary: #eb2525;
   --color-secondary: #64748b;
-  --color-accent: #0ea5e9;
+  --color-accent: #e9c50e;
   --color-background: #ffffff;
   --color-surface: #f8fafc;
   --color-text-primary: #1e293b;
@@ -28,9 +28,9 @@ body {
   color: var(--color-text-primary);
 }
 body.dark-mode {
-  --color-primary: #3b82f6;
+  --color-primary: #eb2525;
   --color-secondary: #94a3b8;
-  --color-accent: #38bdf8;
+  --color-accent: #e9c50e;
   --color-background: #0f172a;
   --color-surface: #1e293b;
   --color-text-primary: #f1f5f9;
@@ -314,7 +314,7 @@ body.dark-mode {
 }
 @media (min-width: 1024px) {
   .about-content {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr fr;
   }
 }
 .about-text p {
@@ -723,3 +723,4 @@ body.dark-mode {
 html {
   scroll-padding-top: 80px;
 }
+
