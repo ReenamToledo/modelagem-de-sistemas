@@ -16,9 +16,9 @@ body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
-  --color-primary: #eb2525;
+  --color-primary: #990033;
   --color-secondary: #64748b;
-  --color-accent: #e9c50e;
+  --color-accent: #b0b0ff;
   --color-background: #ffffff;
   --color-surface: #f8fafc;
   --color-text-primary: #1e293b;
@@ -28,9 +28,9 @@ body {
   color: var(--color-text-primary);
 }
 body.dark-mode {
-  --color-primary: #eb2525;
+  --color-primary: #990033;
   --color-secondary: #94a3b8;
-  --color-accent: #e9c50e;
+  --color-accent: #b0b0ff;
   --color-background: #0f172a;
   --color-surface: #1e293b;
   --color-text-primary: #f1f5f9;
@@ -283,15 +283,13 @@ body.dark-mode {
   display: flex;
   justify-content: center;
 }
-.hero-image .profile-placeholder {
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+.hero-image .profile-placeholder img {
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 6rem;
 }
 @media (min-width: 768px) {
   .hero-image .profile-placeholder {
@@ -426,6 +424,11 @@ body.dark-mode {
   padding: 1.5rem;
   transition: all 0.3s ease;
 }
+
+.project-image img {
+  width: 2rem;
+}
+
 .project-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -582,7 +585,7 @@ body.dark-mode {
 
 /* ===== SEÇÃO CONTATO ===== */
 .contact {
-  padding: 5rem 0;
+  padding: 5rem 3rem;
   background: var(--color-surface);
 }
 .contact-content {
@@ -610,6 +613,7 @@ body.dark-mode {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-bottom: 2rem;
 }
 .contact-method {
   display: flex;
